@@ -1,5 +1,7 @@
 {% for gonderi in gonderis %}
+<a href="{% url 'gonderidetay' pk=gonderi.pk %}">
 <h1>{{gonderi.baslik}}</h1>
+</a>
 <p>{{gonderi.yazi}}</p>
 {{gonderi.kayitzaman}}
 {% endfor %}
