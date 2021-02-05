@@ -1,6 +1,7 @@
-Gönderi Detay Sayfası
-
+{% extends '../generic.html' %}
+{% block icerik %}
 <h1>{{gonderi.baslik}}</h1>
 <p>{{gonderi.yazi}}</p>
 <h4>{{gonderi.kayitzaman}}</h4>
 <a href="{% url 'gonderilistele' %}">Tüm Gönderiler</a>
+{% endblock %}
