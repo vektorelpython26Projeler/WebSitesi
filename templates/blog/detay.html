@@ -3,5 +3,6 @@
 <h1>{{gonderi.baslik}}</h1>
 <p>{{gonderi.yazi}}</p>
 <h4>{{gonderi.kayitzaman}}</h4>
+<a href="{% url 'gonderiduzenle' pk=gonderi.pk %}">Gönderi Düzenle</a>
 <a href="{% url 'gonderilistele' %}">Tüm Gönderiler</a>
 {% endblock %}

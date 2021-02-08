@@ -1,0 +1,10 @@
+{% extends '../generic.html' %}
+{% block icerik %}
+
+<form method="POST">
+{% csrf_token %}
+{{form.as_p}}
+<button type="submit">Gönder</button>
+</form>
+
+{% endblock %}
